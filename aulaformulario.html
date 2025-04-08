@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula Formulários</title>
+</head>
+<body>
+    <h2>Criação de Formulários HTML5</h2>
+    <form>
+        Primeiro Nome <input type="text" name="primeiro_nome"> <br>
+
+        Último Nome <input type="text" name="ultimo_nome"><br> <br>
+
+        Email <br>
+        <input type="email" name="email" id="seu email" placeholder="digite seu email.."> <br> <br>
+
+        Senha <br>
+        <input type="password" name="senha" placeholder="digite a sua senha..."> <br> <br>
+
+        <label for="masc">Masculino</label>
+        <input type="radio" name="genêro" id="masc" value="masculino"> <br>
+        <label for="femi">Feminino</label>
+        <input type="radio" name="genêro" id="femi" value="feminino"> <br> <br>
+
+        Ocupação <br>
+        <select name="ocupacao" id="ocupacao">
+            <optgroup label="Vida boa">
+                <option label="garoto de programa" value="engenheiro de software" selected></option>
+                <option label="vagabundo" value="desempregado"></option>
+            </optgroup>
+            <optgroup label="Vida ruim">
+                <option value="Trabalhador" label="Pedreiro"></option>
+                <option value="elite" label="engenheiro"></option>
+            </optgroup>
+        </select>
+        <br> <br>
+
+        Preferências <br>
+        <input type="checkbox" name="prefs" id="pref1" value="newsletter"> Envie-me um newsletter <br>
+        <input type="checkbox" name="prefs" id="pref2" value="parceiros"> Envie-me ofertas de parceiros <br>
+        <input type="checkbox" name="prefs" id="pref3" value="marketing"> Envie-me material de propaganda <br>
+        <br>
+
+        Comentário: <br> 
+        <textarea rows="7" cols="50" placeholder="seu comentário:"></textarea> <br> 
+
+        <br><br>
+
+        Escolha o arquivo a ser carregado no botão abaixo: <br> <br>
+        <input type="file" name="" id="escolherarquivo"> <br> <br>
+        <input type="submit">
+        <input type="reset">
+
+    </form>
+
+    <br><br>
+
+    <form>
+        <fieldset>
+            <legend> Dados Pessoais</legend>
+            Primeiro Nome <input type="text" name="primeiro_nome"> <br>
+            Último Nome <input type="text" name="ultimo_nome"><br> 
+            Data Nascimento <input type="date" name="datanascimento"><br> 
+        </fieldset>
+
+        <br><br>
+        
+        <input type="image" src="./images/spiderman.webp" alt="Enviar" width="150" height="150">
+    </form>
+</body>
+</html>
